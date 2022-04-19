@@ -1,0 +1,33 @@
+{
+  "name": "nightwatch-saucelabs-visual",
+  "version": "1.0.0",
+  "description": "Nightwatch.js plugin, custom commands and assertions, for running SauceLabs Visual E2E regression tests in Nightwatch.js automated test suites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reallymello/nightwatch-saucelabs-visual.git"
+  },
+  "keywords": [
+    "Nightwatch.js",
+    "nightwatch",
+    "SauceLabs",
+    "screener.io",
+    "visual regression testing",
+    "visual testing",
+    "selenium",
+    "automated testing",
+    "test automation",
+    "framework",
+    "plugin",
+    "custom command"
+  ],
+  "author": "David Mello (https://www.davidmello.com)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/reallymello/nightwatch-saucelabs-visual/issues"
+  },
+  "homepage": "https://github.com/reallymello/nightwatch-saucelabs-visual#readme"
+}
