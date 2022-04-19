@@ -130,7 +130,7 @@ This command takes snapshots of the currently navigated to state of the web appl
 
 This command is called after beginVisualTest and takeSnapshot and will trigger comparison of the snapshots against the baseline. After, it will return a JSON response similar to 
 
-```json
+```js
 {
   passed: true,
   status: 'success',
