@@ -145,6 +145,21 @@ This command is called after beginVisualTest and takeSnapshot and will trigger c
 
 ### assert.visuallyTheSame
 
-This is a custom assertion that can be used in place of endVisualTest to both end the test and return pass if there were no changes or fail if there were changes detected.
+This is a custom assertion that can be used in place of endVisualTest to both end the test and return pass if there were no changes or fail if there were changes detected. It can be used with .not (browser.assert.not.visuallyTheSame()) to assert that there *are* changes as well.
 
-`Verifying the snapshot has no visual regressions in 5000ms - expected "0 visual regressions'" but got: "1 visual regression(s)" (38823ms)`
+Pass Case:
+```sh
+ℹ Loaded url https://www.ecosia.org in 2076ms
+√ Verifying the snapshot has no visual regressions (36479ms)
+```
+
+Pass Case (with .not operator):
+```sh
+ℹ Loaded url https://www.ecosia.org in 2076ms
+√ Verifying the snapshot contains visual regressions (39479ms)
+```
+  
+Fail Case:
+```sh
+Verifying the snapshot has no visual regressions in 5000ms - expected "0 visual regressions'" but got: "1 visual regression(s)" (38823ms)
+```
