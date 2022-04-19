@@ -61,8 +61,8 @@ In nightwatch.json or nightwatch.conf.js add the node_modules paths to the custo
 {
   src_folders: [...],
 
-  "custom_commands_path": ["./node_modules/nightwatch-saucelabs-visual/nightwatch/custom-commands"],
-    "custom_assertions_path": ["./node_modules/nightwatch-saucelabs-visual/nightwatch/custom-assertions"],
+  "custom_commands_path": ["./node_modules/nightwatch-saucelabs-visual/nightwatch/commands"],
+    "custom_assertions_path": ["./node_modules/nightwatch-saucelabs-visual/nightwatch/assertions"],
 
   // other nightwatch config options
 }
