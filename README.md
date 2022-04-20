@@ -37,11 +37,9 @@ In the same directory as your Nightwatch test project
 
 This will install the plugin inside your Nightwatch test project inside the /node_modules folder. You have two different ways you can associate them with Nightwatch depending on your version.
 
-### For Nightwatch 2.0 (plugin pattern--beta NW 2.0 feature)
+### For Nightwatch 2.0 (plugin pattern)
 
 In nightwatch.json or nightwatch.conf.js add nightwatch-saucelabs-visual to your plugins list
-
-If you see errors like `browser.beginVisualTest is not a function` fall back to the Nightwatch 1.x configuration setting under this, plugin functionality in Nightwatch 2 is in beta.
 
 ```js
 {
