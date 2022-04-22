@@ -17,14 +17,17 @@ exports.assertion = function (msg) {
         return actualMessage;
     };
 
-    this.evaluate = function (result = {
-        passed: false,
-        message: "There was an error getting the test result",
-        totals: {
-            changed: -1
+    this.evaluate = function (result) {
+        if (!result) {
+            result = {
+                passed: false,
+                message: "There was an error getting the test result.",
+                totals: {
+                    changed: -1
+                }
+            }
         }
-    }) {
-        actualMessage = `${result.totals.changed} visual regression(s)`
+        actualMessage = result.message;
 
         return result.passed;
     };
