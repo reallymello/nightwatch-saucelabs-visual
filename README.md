@@ -120,7 +120,7 @@ Below is an example
 }
 ```
 
-### beginVisualTest(testName, cssSelectorsToIgnore)
+### beginVisualTest(testName: string, cssSelectorsToIgnore: string)
 
 This custom command starts a visual test expects the name of the test and, optionally, a comma-separated string of css selectors you want to ignore changes in ".h2,#adBanner" for the entire test. This needs to be called before any other visual methods.
 
