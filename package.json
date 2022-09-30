@@ -1,6 +1,6 @@
 {
   "name": "nightwatch-saucelabs-visual",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Nightwatch.js plugin, custom commands and assertions, for running SauceLabs Visual E2E regression tests in Nightwatch.js automated test suites.",
   "main": "index.js",
   "scripts": {
