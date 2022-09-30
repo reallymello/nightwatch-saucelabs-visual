@@ -124,9 +124,13 @@ Below is an example
 
 This custom command starts a visual test expects the name of the test and, optionally, a comma-separated string of css selectors you want to ignore changes in ".h2,#adBanner" for the entire test. This needs to be called before any other visual methods.
 
-### takeSnapshot(testName, cssSelectorsToIgnore)
+### takeSnapshot(testName: string, cssSelectorsToIgnore?: string, cropToSelector?: string, scrollAndStitch?: boolean)
 
 This command takes snapshots of the currently navigated to state of the web application. This custom command expects the name of the snapshot and, optionally, a comma-separated string of css selectors you want to ignore changes in ".h2,#adBanner" in _this specific_ snapshot.
+
+In addition, using `cropToSelector` allows you to pass a CSS selector as a string to crop the screenshot to the context of.
+
+Last, `scrollAndStitch` set to true will capture a full-page screenshot using a scrolling and stitching strategy instead of using native browser full-page screenshot capabilities.
 
 ### endVisualTest
 
